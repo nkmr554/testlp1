@@ -1,12 +1,72 @@
 @charset "UTF-8";
+html{
+    font-size: 100%;
+}
+body {
+	color: #555;
+	font-family: sans-serif;
+    font-size: 1rem;
+}
+p{
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.container{
+overflow: auto;
+scroll-snap-type: y mandatory;
+height: 100vh;
+}
 section{
     height: 100vh;
+    scroll-snap-align: start;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .hero{
     background-image: url(/image/bread1.jpg);
     text-align: center;
     padding-top: 10vh;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+.menu{
+    background-image: url(/image/bread2.jpg);
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.menu-list tr{
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+.menu-list th{
+    font-weight: normal;
+}
+.menu-list td{
+    padding-left: 1rem;
+}
+
+.contact{
+    background-image: url(/image/cafe.jpg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+/*MOBILE　SIZE*/
+@media(max-width:700px){
+    .title{
+        font-size: 4rem;
+    }
 }
